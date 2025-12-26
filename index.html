@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRADE WITH PURAB</title>
+
+<style>
+body{
+  background:#000;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial, sans-serif;
+  color:#fff;
+}
+
+/* 🔥 NEON RGB BOX */
+.card{
+  position:relative;
+  width:92%;
+  max-width:380px;
+  padding:34px 24px;
+  border-radius:26px;
+  background:#05080f;
+  text-align:center;
+  z-index:1;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-5px;
+  border-radius:30px;
+  background:linear-gradient(
+    120deg,
+    #ff004c,
+    #ffea00,
+    #00ff85,
+    #00c3ff,
+    #7c00ff,
+    #ff004c
+  );
+  background-size:300% 300%;
+  filter:blur(10px);
+  animation:borderFlow 3s linear infinite;
+  z-index:-1;
+}
+
+@keyframes borderFlow{
+  0%{background-position:0% 50%;}
+  100%{background-position:300% 50%;}
+}
+
+/* LOGO */
+.logo{
+  width:115px;
+  height:115px;
+  border-radius:50%;
+  background:#fff;
+  margin:0 auto 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.logo img{width:90%;}
+
+/* BARS */
+.bars{
+  display:flex;
+  justify-content:center;
+  gap:6px;
+  margin:12px 0 18px;
+}
+
+.bars span{
+  width:6px;
+  height:14px;
+  background:#3b82f6;
+  animation:bars 1.1s infinite ease-in-out;
+}
+
+.bars span:nth-child(2){animation-delay:.1s}
+.bars span:nth-child(3){animation-delay:.2s}
+.bars span:nth-child(4){animation-delay:.3s}
+.bars span:nth-child(5){animation-delay:.4s}
+
+@keyframes bars{
+  0%,100%{height:10px;}
+  50%{height:26px;}
+}
+
+/* ✨ TITLE GLOW */
+h1{
+  font-size:28px;
+  margin-bottom:6px;
+  animation:titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow{
+  from{
+    text-shadow:0 0 6px #3b82f6, 0 0 14px #3b82f6;
+  }
+  to{
+    text-shadow:0 0 12px #22d3ee, 0 0 26px #22d3ee;
+  }
+}
+
+.subtitle{
+  font-size:14px;
+  color:#60a5fa;
+  margin-bottom:10px;
+}
+
+.members{
+  font-size:15px;
+  color:#facc15;
+  margin-bottom:22px;
+}
+
+/* 🚀 BIG CTA BUTTON (ANIMATED + SHAKE) */
+.btn{
+  display:inline-block;
+  padding:18px 42px;
+  font-size:16px;
+  border-radius:40px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  background:linear-gradient(270deg,#2563eb,#22d3ee,#2563eb);
+  background-size:400% 400%;
+  animation:
+    btnGradient 3s linear infinite,
+    btnShake 1.5s infinite ease-in-out;
+  box-shadow:
+    0 0 15px rgba(59,130,246,.9),
+    0 0 35px rgba(34,211,238,.8);
+}
+
+@keyframes btnGradient{
+  0%{background-position:0% 50%;}
+  100%{background-position:100% 50%;}
+}
+
+@keyframes btnShake{
+  0%,100%{transform:translateX(0);}
+  25%{transform:translateX(-2px);}
+  50%{transform:translateX(2px);}
+  75%{transform:translateX(-1px);}
+}
+
+ul{
+  margin-top:24px;
+  text-align:left;
+  font-size:13px;
+  line-height:1.6;
+}
+
+ul li{margin-bottom:6px;}
+
+.footer{
+  margin-top:16px;
+  font-size:10px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="logo">
+    <img src="logo.png" alt="TRADE WITH PURAB">
+  </div>
+
+  <div class="bars">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <h1>TRADE WITH PURAB</h1>
+  <div class="subtitle">BankNifty • Nifty • Stock Options</div>
+
+  <div class="members">👥 Live Members: 33856+</div>
+
+  <a class="btn" href="https://t.me/+oW3TcHGPqVI5YTk1" target="_blank">
+    Join Telegram +
+  </a>
+
+  <ul>
+    <li>Advanced trading education & strategies</li>
+    <li>Daily market learning & insights</li>
+    <li>Trusted trader community on Telegram</li>
+  </ul>
+
+  <div class="footer">
+    This is for educational purposes only.<br>
+    Market investments are subject to risk.
+  </div>
+
+</div>
+
+</body>
+</html>
